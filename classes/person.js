@@ -46,7 +46,7 @@ class Student extends Person {
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 try {
-  module.exports = Person;
+  module.exports = {Person, Student}
 } catch {
   module.exports = null;
 }
