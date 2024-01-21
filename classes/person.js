@@ -27,13 +27,12 @@ class Person {
 }
 
 class Student extends Person {
-  constructor(firstName, lastName, age, StudentId){
-    super(firstName, lastName, age);{
-      this.StudentId=StudentId;
-    }
+  constructor(firstName, lastName, age, StudentId) {
+    super(firstName, lastName, age);
+    this.StudentId = StudentId;
   }
 
-  study(){
+  study() {
     return `${this.firstName} is studying now.`;
   }
 
@@ -46,7 +45,7 @@ class Student extends Person {
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 try {
-  module.exports = {Person, Student}
+  module.exports = { Person, Student };
 } catch {
   module.exports = null;
 }

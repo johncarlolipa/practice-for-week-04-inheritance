@@ -1,14 +1,13 @@
-const Person = require('./person');
+const Person = require("./person");
 
 class Student extends Person {
   constructor(firstName, lastName, age, major, GPA) {
-    super(firstName, lastName), age; {
-      this.major = major;
-      this.GPA = GPA
-    }
+    super(firstName, lastName), age;
+    this.major = major;
+    this.GPA = GPA;
   }
 
-  static comparedGPA(student1, student2){
+  static comparedGPA(student1, student2) {
     if (student1.GPA > student2.GPA) {
       return `${student1.firstName} ${student1.lastName} has the higher GPA.`;
     } else if (student1.GPA < student2.GPA) {
@@ -17,7 +16,6 @@ class Student extends Person {
       return "Both students have the same GPA.";
     }
   }
-
 }
 
 // Your code here
