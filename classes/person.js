@@ -26,6 +26,22 @@ class Person {
   }
 }
 
+class Student extends Person {
+  constructor(firstName, lastName, age, StudentId){
+    super(firstName, lastName, age);{
+      this.StudentId=StudentId;
+    }
+  }
+
+  study(){
+    return `${this.firstName} is studying now.`;
+  }
+
+  introduce() {
+    return `Hi, I'm ${this.firstName} ${this.lastName}, and my student id is ${this.studentId}.`;
+  }
+}
+
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
